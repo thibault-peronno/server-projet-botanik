@@ -16,7 +16,7 @@ app.get("/express", (req, res) =>{
 });
 */
 // le '/' ne fonctionne pas
-app.use('/trefle', require('./routes/routes'));
+app.use('/get', require('./routes/routes'));
 
 app.listen(port, ()=> console.log('Server launched on port 5000'));
 
