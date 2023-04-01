@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 
 const params = {
   // origin: 'http://127.0.0.1:5173',
-  origin: 'https://botanik-3bb39.web.app/',
+  origin: 'https://botanik-3bb39.web.app',
   token: process.env.token
 }
 // attention ne pas inverser req et res, sinon erreur
