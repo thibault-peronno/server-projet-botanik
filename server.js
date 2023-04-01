@@ -6,7 +6,7 @@ const port = process.env.port;
 const app = express();
 
 app.use(cors({
-    origin: ['http://127.0.0.1:5173', 'https://botanik-3bb39.web.app'],
+    origin: ['http://127.0.0.1:5173', 'https://botanik-3bb39.web.app/'],
     method: ['GET']
 }));
 
