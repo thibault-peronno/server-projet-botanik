@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const port = process.env.port;
+const port = process.env.port || 5000;
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.get("/express", (req, res) =>{
 });
 */
 // le '/' ne fonctionne pas
-app.use('/trefle', require('./routes/routes'));
+app.use('/get', require('./routes/routes'));
 
 app.listen(port, ()=> console.log('Server launched on port 5000'));
 
