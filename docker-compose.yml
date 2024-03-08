@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  api-trefle:
+    container_name: api-trefle
+    build:
+      context: ./
+      dockerfile: ./dockerfile.yml
+    env_file:
+      - .env 
+    ports:
+      - "8083:5000"
